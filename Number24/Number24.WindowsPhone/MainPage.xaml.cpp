@@ -6,6 +6,7 @@
 #include "pch.h"
 #include "MainPage.xaml.h"
 #include <string>
+#include "Number24Calculator.h"
 
 using namespace Number24;
 
@@ -66,19 +67,29 @@ void Number24::MainPage::btnCalculate_Click(Platform::Object^ sender, Windows::U
 	wstring cppstr3(str3->Data());
 	wstring cppstr4(str4->Data());
 
-	wstring cppstr5;
+	try {
+		int number1, number2, number3, number4;
+		number1 = stoi(cppstr1);
+		number2 = stoi(cppstr2);
+		number3 = stoi(cppstr3);
+		number4 = stoi(cppstr4);
+		int number[4];
+		number[0] = number1;
+		number[1] = number2;
+		number[2] = number3;
+		number[3] = number4;
 
-	int number1, number2, number3, number4;
-	number1 = stoi(cppstr1);
-	number2 = stoi(cppstr2);
-	number3 = stoi(cppstr3);
-	number4 = stoi(cppstr4);
+		string result = Number24Calculator::caculate(number);
 
-	int result;
-	result = number1 + number2 + number3 + number4;
-	
-	cppstr5 = to_wstring(result);
+		wstring cppstr5(result.begin(), result.end());
 
-	this->txtblockResult->Text = ref new String(cppstr5.c_str());
+		if (cppstr5 == L"") {
+			cppstr5 = cppstr5 + L"无解";
+		}
 
+		this->txtblockResult->Text = ref new String(cppstr5.c_str());
+	}
+	catch (...) {
+		this->txtblockResult->Text = "出错";
+	}
 }
