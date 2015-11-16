@@ -13,6 +13,7 @@ namespace Windows {
         namespace Xaml {
             namespace Controls {
                 ref class TextBox;
+                ref class Button;
                 ref class TextBlock;
             }
         }
@@ -35,6 +36,7 @@ namespace Number24
         private: ::Windows::UI::Xaml::Controls::TextBox^ txtNumber2;
         private: ::Windows::UI::Xaml::Controls::TextBox^ txtNumber3;
         private: ::Windows::UI::Xaml::Controls::TextBox^ txtNumber4;
+        private: ::Windows::UI::Xaml::Controls::Button^ btnCalculate;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ txtblockResult;
     };
 }

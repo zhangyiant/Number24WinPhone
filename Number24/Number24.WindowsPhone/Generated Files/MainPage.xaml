@@ -23,8 +23,9 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <TextBlock Text="数字1" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="数字1" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <TextBox x:Name="txtNumber1" Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
         <TextBlock Text="数字2"  Grid.Row="2" Grid.Column="0" />
         <TextBox x:Name="txtNumber2" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
@@ -32,8 +33,8 @@
         <TextBox x:Name="txtNumber3"  Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
         <TextBlock Text="数字4"  Grid.Row="6" Grid.Column="0" />
         <TextBox x:Name="txtNumber4"  Grid.Row="7" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
-        <Button  Grid.Row="8" Grid.Column="0" />
-        <TextBlock Text="结果"  Grid.Row="9" Grid.Column="0" />
+        <Button x:ConnectionId='1'  x:Name="btnCalculate" Content="计算"  Grid.Row="8" Grid.Column="0"                            />
+        <TextBlock Text="结果"  Grid.Row="9" Grid.Column="0"/>
         <TextBlock x:Name="txtblockResult" Grid.Row="10" Grid.Column="0" />
     </Grid>
 </Page>
