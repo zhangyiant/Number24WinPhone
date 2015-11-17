@@ -86,6 +86,9 @@ void Number24::MainPage::btnCalculate_Click(Platform::Object^ sender, Windows::U
 		if (cppstr5 == L"") {
 			cppstr5 = cppstr5 + L"无解";
 		}
+		else {
+			cppstr5 = cppstr5 + L"=24";
+		}
 
 		this->txtblockResult->Text = ref new String(cppstr5.c_str());
 	}
