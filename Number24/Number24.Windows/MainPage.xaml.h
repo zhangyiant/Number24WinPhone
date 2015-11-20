@@ -17,5 +17,7 @@ namespace Number24
 	public:
 		MainPage();
 
+	private:
+		void btnCalculate_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }

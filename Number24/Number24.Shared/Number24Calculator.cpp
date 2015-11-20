@@ -4,7 +4,7 @@
 
 using namespace std;
 
-string Number24::Number24Calculator::caculate(int number[])
+string Number24::Number24Calculator::calculate(int number[])
 {
 	string result;
 	result = process(number);

@@ -79,7 +79,7 @@ void Number24::MainPage::btnCalculate_Click(Platform::Object^ sender, Windows::U
 		number[2] = number3;
 		number[3] = number4;
 
-		string result = Number24Calculator::caculate(number);
+		string result = Number24Calculator::calculate(number);
 
 		wstring cppstr5(result.begin(), result.end());
 
