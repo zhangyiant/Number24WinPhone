@@ -125,7 +125,9 @@
       <DeploymentContent>true</DeploymentContent>
     </Image>
     <Image Include="Assets\StoreLogo.scale-240.png" />
-    <Image Include="Assets\SplashScreen.scale-240.png" />
+    <Image Include="Assets\SplashScreen.scale-240.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
     <Image Include="Assets\Wide310x150Logo.scale-240.png">
       <DeploymentContent>true</DeploymentContent>
     </Image>
@@ -135,6 +137,9 @@
     <ClCompile Include="MainPage.xaml.cpp">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

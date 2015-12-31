@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="24ba25dc-f64a-486e-8a45-4bb439345fa5" Publisher="CN=Wenwen" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="24ba25dc-f64a-486e-8a45-4bb439345fa5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="28818antee.Number24" Publisher="CN=1A925564-0EE1-433A-826F-8527FE2223EB" Version="1.1.0.3" />
+  <mp:PhoneIdentity PhoneProductId="3ec82d5c-efc7-4004-9a1e-b7a03cbf79f2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Number24</DisplayName>
     <PublisherDisplayName>antee</PublisherDisplayName>
